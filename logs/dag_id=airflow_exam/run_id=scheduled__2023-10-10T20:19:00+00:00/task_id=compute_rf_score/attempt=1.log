@@ -1,0 +1,16 @@
+[2023-10-10T20:20:06.077+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: airflow_exam.compute_rf_score scheduled__2023-10-10T20:19:00+00:00 [queued]>
+[2023-10-10T20:20:06.083+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: airflow_exam.compute_rf_score scheduled__2023-10-10T20:19:00+00:00 [queued]>
+[2023-10-10T20:20:06.084+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2023-10-10T20:20:06.094+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): compute_rf_score> on 2023-10-10 20:19:00+00:00
+[2023-10-10T20:20:06.127+0000] {standard_task_runner.py:57} INFO - Started process 1229 to run task
+[2023-10-10T20:20:06.134+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', '***_exam', 'compute_rf_score', 'scheduled__2023-10-10T20:19:00+00:00', '--job-id', '50', '--raw', '--subdir', 'DAGS_FOLDER/DAG.py', '--cfg-path', '/tmp/tmp2w5yfdnw']
+[2023-10-10T20:20:06.136+0000] {standard_task_runner.py:85} INFO - Job 50: Subtask compute_rf_score
+[2023-10-10T20:20:06.149+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2023-10-10T20:20:06.199+0000] {task_command.py:415} INFO - Running <TaskInstance: airflow_exam.compute_rf_score scheduled__2023-10-10T20:19:00+00:00 [running]> on host 11df5857e4c6
+[2023-10-10T20:20:06.249+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='***_exam' AIRFLOW_CTX_TASK_ID='compute_rf_score' AIRFLOW_CTX_EXECUTION_DATE='2023-10-10T20:19:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-10-10T20:19:00+00:00'
+[2023-10-10T20:20:06.599+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-10-10T20:20:06.606+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=***_exam, task_id=compute_rf_score, execution_date=20231010T201900, start_date=20231010T202006, end_date=20231010T202006
+[2023-10-10T20:20:06.632+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-10-10T20:20:06.669+0000] {taskinstance.py:2776} INFO - 1 downstream tasks scheduled from follow-on schedule check

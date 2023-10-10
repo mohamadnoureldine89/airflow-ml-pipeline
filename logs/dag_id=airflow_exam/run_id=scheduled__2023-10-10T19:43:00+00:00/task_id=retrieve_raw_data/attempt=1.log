@@ -1,0 +1,208 @@
+[2023-10-10T19:44:02.210+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: airflow_exam.retrieve_raw_data scheduled__2023-10-10T19:43:00+00:00 [queued]>
+[2023-10-10T19:44:02.216+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: airflow_exam.retrieve_raw_data scheduled__2023-10-10T19:43:00+00:00 [queued]>
+[2023-10-10T19:44:02.216+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 6
+[2023-10-10T19:44:02.224+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): retrieve_raw_data> on 2023-10-10 19:43:00+00:00
+[2023-10-10T19:44:02.263+0000] {standard_task_runner.py:57} INFO - Started process 727 to run task
+[2023-10-10T19:44:02.268+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', '***_exam', 'retrieve_raw_data', 'scheduled__2023-10-10T19:43:00+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/DAG.py', '--cfg-path', '/tmp/tmptbs_af54']
+[2023-10-10T19:44:02.269+0000] {standard_task_runner.py:85} INFO - Job 22: Subtask retrieve_raw_data
+[2023-10-10T19:44:02.284+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2023-10-10T19:44:02.347+0000] {task_command.py:415} INFO - Running <TaskInstance: airflow_exam.retrieve_raw_data scheduled__2023-10-10T19:43:00+00:00 [running]> on host 1d03f982e89a
+[2023-10-10T19:44:02.403+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='***_exam' AIRFLOW_CTX_TASK_ID='retrieve_raw_data' AIRFLOW_CTX_EXECUTION_DATE='2023-10-10T19:43:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-10-10T19:43:00+00:00'
+[2023-10-10T19:44:02.959+0000] {base.py:454} INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[2023-10-10T19:44:02.960+0000] {base.py:895} INFO - Added job "ingest_and_schedule" to job store "default"
+[2023-10-10T19:44:02.961+0000] {base.py:181} INFO - Scheduler started
+[2023-10-10T19:45:02.989+0000] {base.py:123} INFO - Running job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:46:02 UTC)" (scheduled at 2023-10-10 19:45:02.958904+00:00)
+[2023-10-10T19:45:03.566+0000] {base.py:454} INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[2023-10-10T19:45:03.570+0000] {base.py:895} INFO - Added job "ingest_and_schedule" to job store "default"
+[2023-10-10T19:45:03.572+0000] {base.py:181} INFO - Scheduler started
+[2023-10-10T19:46:02.966+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:46:02 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:46:03.567+0000] {base.py:123} INFO - Running job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:46:03 UTC)" (scheduled at 2023-10-10 19:46:03.563626+00:00)
+[2023-10-10T19:46:04.167+0000] {base.py:454} INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[2023-10-10T19:46:04.169+0000] {base.py:895} INFO - Added job "ingest_and_schedule" to job store "default"
+[2023-10-10T19:46:04.170+0000] {base.py:181} INFO - Scheduler started
+[2023-10-10T19:47:02.974+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:47:02 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:47:03.569+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:47:03 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:47:04.186+0000] {base.py:123} INFO - Running job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:47:04 UTC)" (scheduled at 2023-10-10 19:47:04.165358+00:00)
+[2023-10-10T19:47:05.057+0000] {base.py:454} INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[2023-10-10T19:47:05.096+0000] {base.py:895} INFO - Added job "ingest_and_schedule" to job store "default"
+[2023-10-10T19:47:05.107+0000] {base.py:181} INFO - Scheduler started
+[2023-10-10T19:48:02.964+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:48:02 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:48:03.564+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:48:03 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:48:04.172+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:48:04 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:48:05.060+0000] {base.py:123} INFO - Running job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:49:05 UTC)" (scheduled at 2023-10-10 19:48:05.045635+00:00)
+[2023-10-10T19:48:05.642+0000] {base.py:454} INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[2023-10-10T19:48:05.646+0000] {base.py:895} INFO - Added job "ingest_and_schedule" to job store "default"
+[2023-10-10T19:48:05.647+0000] {base.py:181} INFO - Scheduler started
+[2023-10-10T19:49:02.961+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:49:02 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:49:03.569+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:49:03 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:49:04.166+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:49:04 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:49:05.047+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:49:05 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:49:05.642+0000] {base.py:123} INFO - Running job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:49:05 UTC)" (scheduled at 2023-10-10 19:49:05.640623+00:00)
+[2023-10-10T19:49:06.193+0000] {base.py:454} INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[2023-10-10T19:49:06.199+0000] {base.py:895} INFO - Added job "ingest_and_schedule" to job store "default"
+[2023-10-10T19:49:06.200+0000] {base.py:181} INFO - Scheduler started
+[2023-10-10T19:50:02.972+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:50:02 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:50:03.564+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:50:03 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:50:04.179+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:50:04 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:50:05.052+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:50:05 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:50:05.642+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:50:05 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:50:06.197+0000] {base.py:123} INFO - Running job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:50:06 UTC)" (scheduled at 2023-10-10 19:50:06.191411+00:00)
+[2023-10-10T19:50:06.741+0000] {base.py:454} INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[2023-10-10T19:50:06.742+0000] {base.py:895} INFO - Added job "ingest_and_schedule" to job store "default"
+[2023-10-10T19:50:06.742+0000] {base.py:181} INFO - Scheduler started
+[2023-10-10T19:51:02.968+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:51:02 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:51:03.565+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:51:03 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:51:04.166+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:51:04 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:51:05.051+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:51:05 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:51:05.644+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:51:05 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:51:06.195+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:51:06 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:51:06.757+0000] {base.py:123} INFO - Running job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:52:06 UTC)" (scheduled at 2023-10-10 19:51:06.741295+00:00)
+[2023-10-10T19:51:07.373+0000] {base.py:454} INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[2023-10-10T19:51:07.376+0000] {base.py:895} INFO - Added job "ingest_and_schedule" to job store "default"
+[2023-10-10T19:51:07.376+0000] {base.py:181} INFO - Scheduler started
+[2023-10-10T19:52:02.961+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:52:02 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:52:03.565+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:52:03 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:52:04.166+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:52:04 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:52:05.048+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:52:05 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:52:05.645+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:52:05 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:52:06.193+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:52:06 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:52:06.742+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:52:06 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:52:07.377+0000] {base.py:123} INFO - Running job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:52:07 UTC)" (scheduled at 2023-10-10 19:52:07.372580+00:00)
+[2023-10-10T19:52:07.999+0000] {base.py:454} INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[2023-10-10T19:52:08.004+0000] {base.py:895} INFO - Added job "ingest_and_schedule" to job store "default"
+[2023-10-10T19:52:08.005+0000] {base.py:181} INFO - Scheduler started
+[2023-10-10T19:53:02.964+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:53:02 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:53:03.565+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:53:03 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:53:04.166+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:53:04 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:53:05.047+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:53:05 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:53:05.641+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:53:05 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:53:06.193+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:53:06 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:53:06.746+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:53:06 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:53:07.372+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:53:07 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:53:08.000+0000] {base.py:123} INFO - Running job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:53:07 UTC)" (scheduled at 2023-10-10 19:53:07.998003+00:00)
+[2023-10-10T19:53:08.502+0000] {base.py:454} INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[2023-10-10T19:53:08.504+0000] {base.py:895} INFO - Added job "ingest_and_schedule" to job store "default"
+[2023-10-10T19:53:08.505+0000] {base.py:181} INFO - Scheduler started
+[2023-10-10T19:54:02.962+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:54:02 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:54:03.564+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:54:03 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:54:04.168+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:54:04 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:54:05.048+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:54:05 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:54:05.654+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:54:05 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:54:06.192+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:54:06 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:54:06.744+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:54:06 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:54:07.372+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:54:07 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:54:07.999+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:54:07 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:54:08.511+0000] {base.py:123} INFO - Running job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:54:08 UTC)" (scheduled at 2023-10-10 19:54:08.501592+00:00)
+[2023-10-10T19:54:09.271+0000] {base.py:454} INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[2023-10-10T19:54:09.280+0000] {base.py:895} INFO - Added job "ingest_and_schedule" to job store "default"
+[2023-10-10T19:54:09.280+0000] {base.py:181} INFO - Scheduler started
+[2023-10-10T19:55:02.970+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:55:02 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:55:03.564+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:55:03 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:55:04.171+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:55:04 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:55:05.085+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:55:05 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:55:05.659+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:55:05 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:55:06.191+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:55:06 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:55:06.806+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:55:06 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:55:07.374+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:55:07 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:55:08.006+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:55:07 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:55:08.503+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:55:08 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:55:09.277+0000] {base.py:123} INFO - Running job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:56:09 UTC)" (scheduled at 2023-10-10 19:55:09.268354+00:00)
+[2023-10-10T19:55:09.842+0000] {base.py:454} INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[2023-10-10T19:55:09.845+0000] {base.py:895} INFO - Added job "ingest_and_schedule" to job store "default"
+[2023-10-10T19:55:09.845+0000] {base.py:181} INFO - Scheduler started
+[2023-10-10T19:56:02.967+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:56:02 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:56:03.565+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:56:03 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:56:04.172+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:56:04 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:56:05.048+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:56:05 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:56:05.641+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:56:05 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:56:06.194+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:56:06 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:56:06.746+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:56:06 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:56:07.376+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:56:07 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:56:08.000+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:56:07 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:56:08.504+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:56:08 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:56:09.269+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:56:09 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:56:09.844+0000] {base.py:123} INFO - Running job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:56:09 UTC)" (scheduled at 2023-10-10 19:56:09.841418+00:00)
+[2023-10-10T19:56:10.527+0000] {base.py:454} INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[2023-10-10T19:56:10.530+0000] {base.py:895} INFO - Added job "ingest_and_schedule" to job store "default"
+[2023-10-10T19:56:10.531+0000] {base.py:181} INFO - Scheduler started
+[2023-10-10T19:57:02.962+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:57:02 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:57:03.564+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:57:03 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:57:04.170+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:57:04 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:57:05.046+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:57:05 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:57:05.645+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:57:05 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:57:06.193+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:57:06 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:57:06.745+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:57:06 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:57:07.382+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:57:07 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:57:08.006+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:57:07 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:57:08.537+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:57:08 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:57:09.301+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:57:09 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:57:09.860+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:57:09 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:57:10.538+0000] {base.py:123} INFO - Running job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:57:10 UTC)" (scheduled at 2023-10-10 19:57:10.525625+00:00)
+[2023-10-10T19:57:11.410+0000] {base.py:454} INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[2023-10-10T19:57:11.426+0000] {base.py:895} INFO - Added job "ingest_and_schedule" to job store "default"
+[2023-10-10T19:57:11.427+0000] {base.py:181} INFO - Scheduler started
+[2023-10-10T19:58:02.962+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:58:02 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:58:03.566+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:58:03 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:58:04.168+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:58:04 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:58:05.048+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:58:05 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:58:05.643+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:58:05 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:58:06.196+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:58:06 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:58:06.741+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:58:06 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:58:07.379+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:58:07 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:58:08.000+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:58:07 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:58:08.504+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:58:08 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:58:09.283+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:58:09 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:58:09.843+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:58:09 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:58:10.529+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:58:10 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:58:11.416+0000] {base.py:123} INFO - Running job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:59:11 UTC)" (scheduled at 2023-10-10 19:58:11.408083+00:00)
+[2023-10-10T19:58:12.111+0000] {base.py:454} INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[2023-10-10T19:58:12.112+0000] {base.py:895} INFO - Added job "ingest_and_schedule" to job store "default"
+[2023-10-10T19:58:12.112+0000] {base.py:181} INFO - Scheduler started
+[2023-10-10T19:59:02.968+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:59:02 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:59:03.565+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:59:03 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:59:04.167+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:59:04 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:59:05.049+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:59:05 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:59:05.644+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:59:05 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:59:06.191+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:59:06 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:59:06.745+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:59:06 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:59:07.378+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:59:07 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:59:07.999+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:59:07 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:59:08.502+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:59:08 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:59:09.280+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:59:09 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:59:09.843+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:59:09 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:59:10.526+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:59:10 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:59:11.410+0000] {base.py:990} WARNING - Execution of job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:59:11 UTC)" skipped: maximum number of running instances reached (1)
+[2023-10-10T19:59:12.117+0000] {base.py:123} INFO - Running job "ingest_and_schedule (trigger: interval[0:01:00], next run at: 2023-10-10 19:59:12 UTC)" (scheduled at 2023-10-10 19:59:12.111048+00:00)
+[2023-10-10T19:59:12.866+0000] {base.py:454} INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[2023-10-10T19:59:12.867+0000] {base.py:895} INFO - Added job "ingest_and_schedule" to job store "default"
+[2023-10-10T19:59:12.867+0000] {base.py:181} INFO - Scheduler started
+[2023-10-10T19:59:56.349+0000] {local_task_job_runner.py:115} ERROR - Received SIGTERM. Terminating subprocesses
+[2023-10-10T19:59:56.717+0000] {process_utils.py:131} INFO - Sending 15 to group 727. PIDs of all processes in the group: [727]
+[2023-10-10T19:59:56.724+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 727
+[2023-10-10T19:59:56.771+0000] {taskinstance.py:1630} ERROR - Received SIGTERM. Terminating subprocesses.
+[2023-10-10T19:59:57.073+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/data_ingestion.py", line 50, in ingest_and_schedule
+    scheduler = BlockingScheduler()
+  File "/home/airflow/.local/lib/python3.8/site-packages/apscheduler/schedulers/blocking.py", line 21, in start
+    self._main_loop()
+  File "/home/airflow/.local/lib/python3.8/site-packages/apscheduler/schedulers/blocking.py", line 30, in _main_loop
+    self._event.wait(wait_seconds)
+  File "/usr/local/lib/python3.8/threading.py", line 558, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/local/lib/python3.8/threading.py", line 306, in wait
+    gotit = waiter.acquire(True, timeout)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1632, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2023-10-10T19:59:57.145+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=***_exam, task_id=retrieve_raw_data, execution_date=20231010T194300, start_date=20231010T194402, end_date=20231010T195957
+[2023-10-10T19:59:57.282+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 22 for task retrieve_raw_data (Task received SIGTERM signal; 727)
+[2023-10-10T19:59:57.458+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=727, status='terminated', exitcode=1, started='19:44:01') (727) terminated with exit code 1
+[2023-10-10T19:59:57.492+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 143
+[2023-10-10T19:59:57.854+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
